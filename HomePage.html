@@ -1,0 +1,211 @@
+<html>
+<head>
+<style>
+#primary_navigation {
+list-style:center;
+text-align: center;
+padding:5px 0;
+margin-left:0;
+font-family:Arial, Helvetica, sans-serif;
+}
+#primary_navigation li {
+display:inline;
+border-left:1px solid #215968;
+padding-left:10px;
+padding-right:7px;
+}
+#primary_navigation li.first {
+border:none;
+padding:0px 0;
+}
+#primary_navigation li a {
+color:000000;
+text-decoration:none;
+}
+#primary_navigation li a:hover {
+background-color:#ffffcc;
+}
+
+table.bold, th.bold, td.bold {
+    border: solid black;
+    border-collapse: collapse;
+}
+
+
+#button {  /* Box in the button */
+        display: inline-table;
+      }
+
+      #button a {
+        text-decoration: none;  /* Remove the underline from the links. */
+      }
+
+      #button ul {
+        list-style-type: none;  /* Remove the bullets from the list */
+      }
+
+
+
+      #button ul li.item {
+        display: none;  /* By default, do not display the items (which contains the links) */
+      }  
+
+      #button ul:hover .item {  /* When the user hovers over the button (or any of the links) */
+        display: block;
+        border: 1px solid black;
+        background-color: #ffffcc;
+      }
+
+
+
+
+  #SearchBar{
+    float:right;
+    padding:20px;
+  }
+  .SearchTextInput{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    border:1px solid #000000; border-right:0px;
+    border-top-left-radius: 5px 5px;
+    border-bottom-left-radius: 5px 5px;
+  }
+  .SearchButton {
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Arial, Helvetica, sans-serif, black;
+    font-size:14px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: solid 1px #000000; border-right:0px;
+    background: #FFFF49;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FFFF49), to(#ffffff));
+    background: -moz-linear-gradient(top,  #FFFF49,  #FBFBA6);
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px; 
+
+
+  }
+  .SearchButton:hover {
+    text-decoration: none;
+    background: #FEFE2C;
+    background: -webkit-gradient(linear, left top, left bottom, from(#FEFE2C), to(#FEFE2C));
+
+  }
+  /* Fixes submit button height problem in Firefox */
+  .SearchButton::-moz-focus-inner {
+    border: 0;
+  }
+  .SearchClear{
+    clear:both;
+  }
+
+
+}
+</style>
+</head>
+<body> 
+
+<ul id="primary_navigation">
+<li class="first"><a href="#">About Us</a></li>
+<li><a href="#">Enlightening</a></li>
+<li><a href="#">Inspiring Stories</a></li>
+<li><a href="#">Quiz</a></li>
+<li><a href="#">Contact Us</a></li>
+</ul>
+
+
+
+<img src="Logo.jpg" width="350" height="225" style="margin-top:-60px">
+
+
+    <form id="SearchBar" method="get" action="http://www.example.com" >
+            <input type="text" class="SearchTextInput" name="q" size="21" maxlength="120"><input type="submit" value="search" class="SearchButton">
+    </form>
+  <div class="SearchClear"></div>
+  </div>
+
+<table align="right" class="Social" width="40" border="0" style="margin-top:-115px; margin-right:158px;">
+<tr>
+
+<td>
+<a href="http://www.instagram.com">
+<img src="Instagram.png" width="25" height="25">
+</a>
+</td>
+
+<td>
+<a href="http://www.facebook.com">  
+<img src="Facebook.png" width="25" height="25">
+</a>
+</td>
+
+<td>
+<a href="http://www.twitter.com">
+<img src="Twitter.png" width="25" height="25">
+</a>
+</td>
+
+<td>
+<a href="http://www.pinterest.com">
+<img src="Pinterest.png" width="25" height="25">
+</a>
+</td>
+
+<td>
+<a href="http://www.googlemail.com">
+<img src="GoogleMail.png" width="25" height="25">
+</a>
+</td>
+</tr>
+</table>
+
+
+<table class="bold" width="38%" align="center" height="20%" style="margin-top:-70px; margin-left:430px;">
+<tr>
+<td class="bold" frame="border" BGCOLOR="#ffffcc">Latest Quote</td>
+</tr>
+<tr >
+<td height="80%" valign="top">asdafgasdgasd</td>
+</tr>
+</table>
+<br>
+
+<table style="width:70%" class="bold">
+  <tr>
+    <td colspan="2" class="bold" BGCOLOR="#ffffcc">&nbsp;&nbsp;Recent Posts</td>
+  </tr>
+
+  <tr >
+    <td class="bold">&nbsp;&nbsp;<textarea rows="5" cols="30">Recent post 1</textarea></td>
+    <td class="bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="30">Recent post 4</textarea></td>
+  </tr>
+
+  <tr>
+    <td class="bold">&nbsp;&nbsp;<textarea rows="5" cols="30">Recent post 2</textarea></td>
+    <td class="bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="30">Recent post 5</textarea></td> 
+  </tr>
+  
+  <tr>
+    <td class="bold">&nbsp;&nbsp;<textarea rows="5" cols="30">Recent post 3</textarea></td>
+    <td class="bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<textarea rows="5" cols="30">Recent post 6</textarea></td> 
+</tr>
+</table> 
+
+<div id="button">
+      <ul>
+        <li class="top">Enlightening</li>
+        <li class="item"><a href="http://serverfault.com/">Anxiety</a></li>
+        <li class="item"><a href="http://superuser.com/">Stress</a></li>
+        <li class="item"><a href="http://doctype.com/">Deppression</a></li>
+      </ul>
+    </div> 
+
+</body>
+</html>
+
